@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>徐其闯的个人空间</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/component.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/snap.svg-min.js"></script>
+</head>
+
+<body>
+    <div id="pagewrap" class="pagewrap">
+        <audio autoplay="autoplay" loop class="audio">
+            <source src="./src/source/明日歌.mp3" type="audio/mp3"> 
+            <source src="./src/source/明日歌.ogg" type="audio/ogg"> 
+            <source src="./src/source/明日歌.aac" type="audio/mp4"> 
+        </audio>
+        <div class="music"></div>
+        <div class="slideshow">
+            <div class="slideshow-image" style="background-image: url('./src/img/1.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('./src/img/2.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('./src/img/3.jpg')"></div>
+            <div class="slideshow-image" style="background-image: url('./src/img/4.jpg')"></div>
+        </div>
+        <center><br><br><br>正确的密码是一个字母“Z”的形状哦！
+            <br><br><br>
+            <div id="gesturepwd"></div>
+        </center>
+        <div id="loader" class="pageload-overlay" data-opening="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 29.96875 C 40.01804 29.96875 40.03125 29.98196 40.03125 30 C 40.03125 30.01804 40.01804 30.03125 40 30.03125 C 39.98196 30.03125 39.96875 30.01804 39.96875 30 C 39.96875 29.98196 39.98196 29.96875 40 29.96875 Z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
+                <path d="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 -25.6875 C 70.750092 -25.6875 95.6875 -0.7500919 95.6875 30 C 95.6875 60.750092 70.750092 85.6875 40 85.6875 C 9.2499078 85.6875 -15.6875 60.750092 -15.6875 30 C -15.6875 -0.7500919 9.2499078 -25.6875 40 -25.6875 Z"/>
+            </svg>
+        </div>
+        <section class="tomorrow">
+            <ul id="marquee" class="marquee">
+                <li>明日复明日，明日何其多。</li>
+                <li>我生待明日，万事成蹉跎。</li>
+                <li>世人若被明日累，春去秋来老将至。</li>
+                <li>朝看水东流，暮看日西坠。</li>
+                <li>百年明日能几何？请君听我明日歌。</li>
+                <li>明日复明日，明日何其多！</li>
+                <li>日日待明日，万世成蹉跎。</li>
+                <li>世人皆被明日累，明日无穷老将至。</li>
+                <li>晨昏滚滚水东流，今古悠悠日西坠。</li>
+                <li>百年明日能几何？请君听我明日歌。</li>
+            </ul>
+        </section>
+    </div>
+    <h2 id="module"></h2>
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/jquery.gesture.password.js"></script>
+    <script src="./src/js/jquery.marquee.min.js"></script>
+    <script src="./src/js/layer/layer.js"></script>
+    <script src="./src/js/classie.js"></script>
+    <script src="./src/js/svgLoader.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

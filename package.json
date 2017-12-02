@@ -1,0 +1,17 @@
+{
+    "name": "myweb",
+    "version": "1.0.0",
+    "description": "<!DOCTYPE html>\r <html lang=\"en\">",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "css-loader": "^0.28.7",
+        "style-loader": "^0.19.0",
+        "webpack": "^3.9.1"
+    },
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC"
+}
