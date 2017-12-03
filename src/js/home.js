@@ -1,45 +1,61 @@
+// swiper切换效果
+$(function() {
+    var swiper = new Swiper('.swiper-container1', {
+        effect: 'fade',
+        onlyExternal: true,
+        fade: {
+            crossFade: true,
+        }
+    });
+    $(".city_wrapper").on('click', 'a', function(ev) {
+        ev.stopPropagation()
+        let index = $(this).parent().index();
+        swiper.slideTo(index, 1000, false);
+    })
+    var mySwiper = new Swiper('.swiper-container2', {
+        effect: 'flip',
+        flipEffect: {
+            slideShadows: true,
+            limitRotation: true,
+        },
+        loop: true
+    })
+
+})
+
+// 全拼滚动js
+$(function() {
+    $.fn.fullpage({
+        verticalCentered: false,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+        navigation: true,
+        navigationTooltips: ['首页', '个人简介', '在路上', '那四年', '心里话', '雨中空港']
+    });
+
+});
+
+$(function() {
+    $('#camera_wrap').camera({
+        height: '400px',
+        loader: 'bar',
+        pagination: false,
+        thumbnails: true
+    });
+});
+// 雨滴效果
 $(function() {
 
-    // $(".text1").letterfx({
-    //     "fx": "fly-right fly-bottom spin"
-    // });
-    // var swiper = new Swiper('.swiper-container');
+    demo();
 
-    // $(".city_wrapper li").prepend("<span></span>");
-
-    // $(".city_wrapper li").each(function() {
-    //     var linkText = $(this).find("a").html();
-    //     $(this).find("span").show().html(linkText);
-    // });
-
-    // $(".city_wrapper li").hover(function(ev) {
-    //     ev.stopPropagation()
-    //     $(this).find("span").stop().animate({
-    //         marginTop: "-40"
-    //     }, 250);
-    // }, function() {
-    //     $(this).find("span").stop().animate({
-    //         marginTop: "0"
-    //     }, 250);
-    // });
-    // // 带音乐的导航
-    // var str = 'abcde'
-    // $('.city_wrapper').on('mouseenter', 'span', function() {
-    //     var v = $(this).parent().index();
-    //     var oAudio = new Audio('https://s2.ssl.qhimg.com/share/audio/piano1/' + str.charAt(v) + '4.ogg')
-    //     oAudio.play();
-    // })
-    $("#flipbook").turn({
-        width: 650,
-        height: 400,
-        duration: 300,
-        gradients: true,
-        page: 2
-
-    });
-    // $("#flipbook").turn({
-    //     width: 400,
-    //     height: 300
-    // });
+    function demo() {
+        var engine = new RainyDay('canvas', 'demo2', window.innerWidth, window.innerHeight);
+        engine.gravity = engine.GRAVITY_NON_LINEAR;
+        engine.trail = engine.TRAIL_DROPS;
+        engine.VARIABLE_GRAVITY_ANGLE = Math.PI / 8;
+        engine.rain([
+            engine.preset(0, 2, 0.5),
+            engine.preset(4, 4, 1)
+        ], 50);
+    }
 
 })

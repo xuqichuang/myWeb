@@ -6,58 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>徐其闯的个人空间</title>
-    <link rel="stylesheet" href="./css/jquery.fullPage.css">
-    <!-- 轮播图 -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/homeBanner.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel='stylesheet' href="css/camera.css">
-    <link rel="stylesheet" href="css/jquery-letterfx.min.css" />
-    <link rel="stylesheet" href="css/slimbox.css" />
-    <link rel="stylesheet" href="./css/swiper.min.css">
-    <script src='./js/jquery.min.js'></script>
-    <script src='./js/jquery.easing.1.3.js'></script>
-    <script src='./js/camera.min.js'></script>
-    <script src="./js/jquery-letterfx.min.js"></script>
-    <script src="./js/jquery-ui.min.js "></script>
-    <script src="./js/jquery.fullPage.min.js"></script>
-    <script src="./js/slimbox.js"></script>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/rainyday.js"></script>
+    <link rel="stylesheet" href="src/css/jquery-letterfx.min.css" />
+    <link rel="stylesheet" href="./src/css/swiper.min.css">
+    <script src='./src/js/jquery.min.js'></script>
+    <script src='./src/js/camera.min.js'></script>
+    <script src="./src/js/jquery-letterfx.min.js"></script>
+    <script src="./src/js/jquery.fullPage.min.js"></script>
+    <script src="./src/js/swiper.min.js"></script>
+    <script src="./src/js/rainyday.js"></script>
+    <script src="./dist/home.bundle.js"></script>
     <script>
-        $(function() {
-            $.fn.fullpage({
-                verticalCentered: false,
-                anchors: ['page1', 'page2', 'page3', 'page4', 'page7', 'page8'],
-                navigation: true,
-                navigationTooltips: ['首页', '个人简介', '在路上', '那四年', '心里话', '雨中空港']
-            });
-
-        });
-
-        jQuery(function() {
-            jQuery('#camera_wrap').camera({
-                height: '400px',
-                loader: 'bar',
-                pagination: false,
-                thumbnails: true
-            });
-        });
-        // 雨滴效果
-        function demo() {
-            var engine = new RainyDay('canvas', 'demo2', window.innerWidth, window.innerHeight);
-            engine.gravity = engine.GRAVITY_NON_LINEAR;
-            engine.trail = engine.TRAIL_DROPS;
-            engine.VARIABLE_GRAVITY_ANGLE = Math.PI / 8;
-            engine.rain([
-                engine.preset(0, 2, 0.5),
-                engine.preset(4, 4, 1)
-            ], 50);
-        }
-        window.onload = function() {
-            demo();
-        }
     </script>
 </head>
 
@@ -65,7 +23,7 @@
 
     <div class="section section1">
 
-        <div class="bg"><img src="images/section1.jpg" alt=""></div>
+        <div class="bg"><img src="src/images/section1.jpg" alt=""></div>
 
         <div class="bg11"></div>
 
@@ -82,45 +40,21 @@
             <section id="content">
                 <div class="feature">
                     <div class="camera_wrap camera_magenta_skin" id="camera_wrap">
-                        <div data-thumb="images/slides/thumbs/1.jpg" data-src="images/slides/slide1.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/1.jpg" data-src="src/images/slides/slide1.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/2.jpg" data-src="images/slides/slide2.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/2.jpg" data-src="src/images/slides/slide2.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/3.jpg" data-src="images/slides/slide3.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/3.jpg" data-src="src/images/slides/slide3.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/4.jpg" data-src="images/slides/slide4.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/4.jpg" data-src="src/images/slides/slide4.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/5.jpg" data-src="images/slides/slide5.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/5.jpg" data-src="src/images/slides/slide5.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/6.jpg" data-src="images/slides/slide6.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/6.jpg" data-src="src/images/slides/slide6.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/7.jpg" data-src="images/slides/slide7.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/7.jpg" data-src="src/images/slides/slide7.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/8.jpg" data-src="images/slides/slide8.jpg">
-                            <!-- <div class="camera_caption fadeFromBottom">
-                                <em>It's completely free</em> (even if a donation is appreciated)
-                            </div> -->
+                        <div data-thumb="src/images/slides/thumbs/8.jpg" data-src="src/images/slides/slide8.jpg">
                         </div>
                     </div>
                     <div style="clear:both; display:block; height:10px"></div>
@@ -131,7 +65,7 @@
     </div>
     <div class="section section2">
 
-        <div class="bg"><img src="images/section2.jpg" alt=""></div>
+        <div class="bg"><img src="src/images/section2.jpg" alt=""></div>
 
         <div class="bg21"></div>
 
@@ -155,7 +89,7 @@
 
     </div>
     <div class="section section3">
-        <div class="bg"><img src="images/section3.jpg" alt=""></div>
+        <div class="bg"><img src="src/images/section3.jpg" alt=""></div>
         <div class="bg32"></div>
         <strong>[～在路上～]</strong>
         <h3>一年好景君须记，最是橙红橘绿时。</h3>
@@ -172,8 +106,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <h4>家乡所在地宿迁历史悠久、文化繁荣，古称下相、宿豫，是西楚霸王项羽的故乡，京杭大运河穿境而过，北倚骆马湖，南临洪泽湖，淮海经济区核心区八大城市之一，洋河、双沟两大名酒出产于此。</h4>
-                            <a href="img/项羽1.jpg" rel="lightbox[gallery]">
-                                <img src="img/项羽.jpg" alt="项羽" />
+                            <a href="src/img/项羽1.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/项羽.jpg" alt="项羽" />
                                 <div class="hover_wrap">
                                     <p class="txt1">项王故里</p>
                                     <p class="txt2">项羽举鼎</p>
@@ -181,24 +115,24 @@
                                     <p class="txt4">死亦为鬼雄</p>
                                 </div>
                             </a>
-                            <a href="img/洪泽湖1.jpg" rel="lightbox[gallery]">
-                                <img src="img/洪泽湖.jpg" alt="image 3" />
+                            <a href="src/img/洪泽湖1.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/洪泽湖.jpg" alt="image 3" />
                                 <div class="hover_wrap">
                                     <p class="txt1">洪泽湖湿地公园</p>
                                     <p class="txt2">湿地生态博物馆</p>
                                     <p class="txt3">古泗州文化博物馆</p>
                                 </div>
                             </a>
-                            <a href="img/龙王庙1.jpg" rel="lightbox[gallery]">
-                                <img src="img/龙王庙.jpg" alt="image 6" />
+                            <a href="src/img/龙王庙1.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/龙王庙.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">龙王庙行宫</p>
                                     <p class="txt2">乾隆六下江南五次宿顿</p>
                                     <p class="txt3">布局严整，规模宏大</p>
                                 </div>
                             </a>
-                            <a href="img/妈祖1.jpg" rel="lightbox[gallery]">
-                                <img src="img/妈祖.jpg" alt="image 6" />
+                            <a href="src/img/妈祖1.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/妈祖.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">泗阳妈祖文化园</p>
                                     <p class="txt2">一轴一环两心一片区</p>
@@ -209,8 +143,8 @@
                         </div>
                         <div class="swiper-slide">
                             <h4>苏州，古称吴，又称姑苏、平江，始建于公元前514年，历史悠久，人文荟萃，是昆剧和苏剧的故乡，有“上有天堂，下有苏杭”之称。</h4>
-                            <a href="img/周庄.jpg" rel="lightbox[gallery]">
-                                <img src="img/周庄1.jpg" alt="image 5" />
+                            <a href="src/img/周庄.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/周庄1.jpg" alt="image 5" />
                                 <div class="hover_wrap">
                                     <p class="txt1">周庄</p>
                                     <p class="txt2">沈万三故居、富安桥</p>
@@ -218,8 +152,8 @@
                                     <p class="txt4">中国第一水乡</p>
                                 </div>
                             </a>
-                            <a href="img/拙政园.jpg" rel="lightbox[gallery]">
-                                <img src="img/拙政园1.jpg" alt="image 6" />
+                            <a href="src/img/拙政园.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/拙政园1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">拙政园</p>
                                     <p class="txt2">中国四大名园之一</p>
@@ -227,8 +161,8 @@
                                     <p class="txt4">见山楼听雨轩小飞虹</p>
                                 </div>
                             </a>
-                            <a href="img/虎丘.jpg" rel="lightbox[gallery]">
-                                <img src="img/虎丘1.jpg" alt="image 6" />
+                            <a href="src/img/虎丘.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/虎丘1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">虎丘</p>
                                     <p class="txt2">剑池、虎丘塔</p>
@@ -237,8 +171,8 @@
 
                                 </div>
                             </a>
-                            <a href="img/山塘街.jpg" rel="lightbox[gallery]">
-                                <img src="img/山塘街1.jpg" alt="image 6" />
+                            <a href="src/img/山塘街.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/山塘街1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">山塘街</p>
                                     <p class="txt2">老街、玉涵堂、通贵桥</p>
@@ -248,8 +182,8 @@
                         </div>
                         <div class="swiper-slide">
                             <h4>学校所在地长春是吉林省省会，东北亚经济圈中心城市，曾作为“伪满洲国”首都，是国务院定位的中国东北地区中心城市之一、我国重要的工业基地、国家历史文化名城和全国综合交通枢纽。</h4>
-                            <a href="img/长白山.jpg" rel="lightbox[gallery]">
-                                <img src="img/长白山1.jpg" alt="项羽" />
+                            <a href="src/img/长白山.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/长白山1.jpg" alt="项羽" />
                                 <div class="hover_wrap">
                                     <p class="txt1">奇松</p>
                                     <p class="txt2">长相守，到白头</p>
@@ -257,8 +191,8 @@
                                 </div>
                             </a>
 
-                            <a href="img/长影世纪城.jpg" rel="lightbox[gallery]">
-                                <img src="img/长影世纪城1.jpg" alt="image 6" />
+                            <a href="src/img/长影世纪城.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/长影世纪城1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">怪石</p>
                                     <p class="txt2">被誉为“东方好莱坞”</p>
@@ -266,8 +200,8 @@
                                     <p class="txt4">影视主题公园</p>
                                 </div>
                             </a>
-                            <a href="img/长春雕塑公园.jpg" rel="lightbox[gallery]">
-                                <img src="img/长春雕塑公园1.jpg" alt="image 6" />
+                            <a href="src/img/长春雕塑公园.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/长春雕塑公园1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">云海</p>
                                     <p class="txt2">融汇当代雕塑艺术</p>
@@ -275,8 +209,8 @@
                                     <p class="txt4">以友谊·和平·春天为主题</p>
                                 </div>
                             </a>
-                            <a href="img/伪满皇宫.jpg" rel="lightbox[gallery]">
-                                <img src="img/伪满皇宫1.jpg" alt="image 6" />
+                            <a href="src/img/伪满皇宫.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/伪满皇宫1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">温泉</p>
                                     <p class="txt2">三大宫廷遗址之一</p>
@@ -286,8 +220,8 @@
                         </div>
                         <div class="swiper-slide">
                             <h4>黄山，简称徽或黄，安徽省地级市，古称新安、歙州、徽州，地处皖浙赣三省交界处，被称为“三省通衢”，1987年废除徽州建制，以境内山岳“黄山”之名设立地级市。</h4>
-                            <a href="img/黄山.jpg" rel="lightbox[gallery]">
-                                <img src="img/黄山1.jpg" alt="奇松" />
+                            <a href="src/img/黄山.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/黄山1.jpg" alt="奇松" />
                                 <div class="hover_wrap">
                                     <p class="txt1">黄山</p>
                                     <p class="txt2">五岳归来不看山</p>
@@ -295,8 +229,8 @@
                                     <p class="txt4">奇松怪石云海温泉</p>
                                 </div>
                             </a>
-                            <a href="img/西递.jpg" rel="lightbox[gallery]">
-                                <img src="img/西递1.jpg" alt="image 2" />
+                            <a href="src/img/西递.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/西递1.jpg" alt="image 2" />
                                 <div class="hover_wrap">
                                     <p class="txt1">西递</p>
                                     <p class="txt2">明清古民居博物馆</p>
@@ -305,8 +239,8 @@
                                 </div>
                             </a>
 
-                            <a href="img/宏村.jpg" rel="lightbox[gallery]">
-                                <img src="img/宏村1.jpg" alt="image 6" />
+                            <a href="src/img/宏村.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/宏村1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">宏村</p>
                                     <p class="txt2">画里乡村</p>
@@ -314,8 +248,8 @@
                                     <p class="txt4">月沼风荷，双溪映碧</p>
                                 </div>
                             </a>
-                            <a href="img/屯溪老街.jpg" rel="lightbox[gallery]">
-                                <img src="img/屯溪老街1.jpg" alt="image 6" />
+                            <a href="src/img/屯溪老街.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/屯溪老街1.jpg" alt="image 6" />
                                 <div class="hover_wrap">
                                     <p class="txt1">屯溪老街</p>
                                     <p class="txt2">南宋和明清建筑风格</p>
@@ -325,32 +259,32 @@
                         </div>
                         <div class="swiper-slide">
                             <h4>最想去的旅游城市，巴黎（Paris），法国的首都，是欧洲第二大城市，誉为时尚之都，世界花都,浪漫之都，艺术之都。</h4>
-                            <a href="img/埃菲尔铁塔.jpg" rel="lightbox[gallery]">
-                                <img src="img/埃菲尔铁塔1.jpg" alt="项羽" />
+                            <a href="src/img/埃菲尔铁塔.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/埃菲尔铁塔1.jpg" alt="项羽" />
                                 <div class="hover_wrap">
                                     <p class="txt1">埃菲尔铁塔</p>
                                     <p class="txt2">巴黎的标志之一</p>
                                     <p class="txt3">俗称“铁娘子”</p>
                                 </div>
                             </a>
-                            <a href="img/凯旋门.jpg" rel="lightbox[gallery]">
-                                <img src="img/凯旋门1.jpg" alt="image 2" />
+                            <a href="src/img/凯旋门.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/凯旋门1.jpg" alt="image 2" />
                                 <div class="hover_wrap">
                                     <p class="txt1">凯旋门</p>
                                     <p class="txt2">出征、胜利</p>
                                     <p class="txt3">和平、抵抗</p>
                                 </div>
                             </a>
-                            <a href="img/卢浮宫.jpg" rel="lightbox[gallery]">
-                                <img src="img/卢浮宫1.jpg" alt="image 3" />
+                            <a href="src/img/卢浮宫.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/卢浮宫1.jpg" alt="image 3" />
                                 <div class="hover_wrap">
                                     <p class="txt1">卢浮宫</p>
                                     <p class="txt2">世界四大博物馆之首</p>
                                     <p class="txt3">藏有各国艺术珍品</p>
                                 </div>
                             </a>
-                            <a href="img/巴黎圣母院.jpg" rel="lightbox[gallery]">
-                                <img src="img/巴黎圣母院1.jpg" alt="image 4" />
+                            <a href="src/img/巴黎圣母院.jpg" rel="lightbox[gallery]">
+                                <img src="src/img/巴黎圣母院1.jpg" alt="image 4" />
                                 <div class="hover_wrap">
                                     <p class="txt1">巴黎圣母院</p>
                                     <p class="txt2">哥特式建筑</p>
@@ -369,7 +303,7 @@
     </div>
     <div class="section section4">
 
-        <div class="bg"><img src="images/section4.jpg" alt=""></div>
+        <div class="bg"><img src="src/images/section4.jpg" alt=""></div>
 
         <div class="bg41"></div>
 
@@ -413,7 +347,7 @@
     </div>
     <div class="section section7">
 
-        <div class="bg"><img src="images/section7.jpg" alt=""></div>
+        <div class="bg"><img src="src/images/section7.jpg" alt=""></div>
 
         <div class="bg71">
             <div class="content-words">
@@ -449,26 +383,21 @@
                         <li>
                             <ul class="d3">
                                 <div class="d1-tit d3-3">
-                                    钟<br>爱<br>的<br>诗<br>句
+                                    用<br>到<br>的<br>插<br>件<br>
                                 </div>
                                 <div class="d3-con">
-                                    <p>年年岁岁花相似，岁岁年年人不同。</p>
-                                    <p>劝君莫惜金缕衣，劝君惜取少年时。</p>
-                                    <p>鱼恋水，水阔凭鱼跃；鸟爱天，天高任鸟飞。</p>
-                                    <p>书到用时方恨少，事非经过不知难。</p>
-                                    <p>枯木逢春尤再发，人无两度再少年。</p>
-                                    <p>根深不怕风摇动，身正何愁影子斜。</p>
-                                    <p>衣带渐宽终不悔，为伊消得人憔悴。</p>
-                                    <p>文能提笔安天下，武能上马定乾坤。</p>
-                                    <p>欲求生富贵，须下死工夫。</p>
-                                    <p>得之易，失之易；得之难，失之难。</p>
-                                    <p>有志者事竟成，破釜沉舟，百二秦关终属楚；</p>
-                                    <p>苦心人天不负，卧薪尝胆，三千越甲可吞吴。</p>
-                                    <p>强中自有强中手，莫向人前满自夸。</p>
-                                    <p>处处留心皆学问，人情练达及文章。</p>
-                                    <p>书山有路勤为径，学海无涯苦作舟。</p>
-                                    <p>莫道坐中安乐少，须知世上苦情多。</p>
-                                    <p>良药苦口利于病，忠言逆耳利于行。</p>
+                                    <p>jquery.js 前端库文件</p>
+                                    <p>jquery-ui.js jqueryUI组件</p>
+                                    <p>layer.js 提示框效果</p>
+                                    <p>jquery.fullPage.js && jquery.fullPage.css 全屏滚动</p>
+                                    <p>slimbox.js && slimbox.css 图片查看</p>
+                                    <p>jquery-letterfx.js && jquery-letterfx.css 文字特效</p>
+                                    <p>swiper.js && swiper.css tab切换</p>
+                                    <p>jquery.gesture.password 九宫格解锁</p>
+                                    <p>rainday.js canvas下雨效果</p>
+                                    <p>webpack 自动化打包工具</p>
+                                    <p>git 分布式版本控制系统</p>
+                                    <p>更多详情请访问<a style="color:red" target="_blank" href="https://github.com/xuqichuang/myWeb">项目地址>></a></p>
                                 </div>
                             </ul>
                         </li>
@@ -483,20 +412,10 @@
 
         <h3>一目了然，来往邮件更清晰</h3>
 
-        <div class="bg74"><img src="images/bg74.png" alt=""></div>
+        <div class="bg74"><img src="src/images/bg74.png" alt=""></div>
 
     </div>
     <div class="section section8">
-
-        <div class="bg"><img src="images/section8.jpg" alt=""></div>
-
-        <div class="bg81"></div>
-
-        <div class="bg82"></div>
-
-        <div class="bg83"></div>
-
-        <div class="bg84"></div>
 
         <strong>[～雨中空港～]</strong>
 
@@ -6436,57 +6355,41 @@
 
     </div>
     <script>
-        $(".text1").letterfx({
-            "fx": "fly-right fly-bottom spin"
-        });
+        $(function() {
+            $(".text1").letterfx({
+                "fx": "fly-right fly-bottom spin"
+            });
 
-        $(".city_wrapper li").prepend("<span></span>");
+            // 风景标题
+            $(".city_wrapper li").prepend("<span></span>");
 
-        $(".city_wrapper li").each(function() {
-            var linkText = $(this).find("a").html();
-            $(this).find("span").show().html(linkText);
-        });
+            $(".city_wrapper li").each(function() {
+                var linkText = $(this).find("a").html();
+                $(this).find("span").show().html(linkText);
+            });
 
-        $(".city_wrapper li").hover(function(ev) {
-            ev.stopPropagation()
-            $(this).find("span").stop().animate({
-                marginTop: "-40"
-            }, 250);
-        }, function() {
-            $(this).find("span").stop().animate({
-                marginTop: "0"
-            }, 250);
-        });
-        var swiper = new Swiper('.swiper-container1', {
-            effect: 'fade',
-            onlyExternal: true,
-            fade: {
-                crossFade: true,
-            }
-        });
-        $(".city_wrapper").on('click', 'a', function(ev) {
-            ev.stopPropagation()
-            let index = $(this).parent().index();
-            swiper.slideTo(index, 1000, false);
-        })
+            $(".city_wrapper li").hover(function(ev) {
+                ev.stopPropagation()
+                $(this).find("span").stop().animate({
+                    marginTop: "-40"
+                }, 250);
+            }, function() {
+                $(this).find("span").stop().animate({
+                    marginTop: "0"
+                }, 250);
+            });
 
-        // 带音乐的导航
-        var str = 'abcde'
-        $('.city_wrapper').on('mouseenter', 'span', function() {
-            var v = $(this).parent().index();
-            var oAudio = new Audio('https://s2.ssl.qhimg.com/share/audio/piano1/' + str.charAt(v) + '4.ogg')
-            oAudio.play();
-        })
-        var mySwiper = new Swiper('.swiper-container2', {
-            effect: 'flip',
-            flipEffect: {
-                slideShadows: true,
-                limitRotation: true,
-            },
-            loop: true
+
+            // 带音乐的导航
+            var str = 'abcde'
+            $('.city_wrapper').on('mouseenter', 'span', function() {
+                var v = $(this).parent().index();
+                var oAudio = new Audio('https://s2.ssl.qhimg.com/share/audio/piano1/' + str.charAt(v) + '4.ogg')
+                oAudio.play();
+            })
+
         })
     </script>
-
 
 </body>
 

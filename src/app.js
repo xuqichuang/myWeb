@@ -1,4 +1,9 @@
-let md1 = require('./components/md1.js')
-let md2 = require('./components/md2.js')
+// css直接用require 就可以了，不需要命名
+require('./css/demo.css')
+require('./css/component.css')
+require('./css/style.css')
 
-document.getElementById('module').innerHTML = md1.name + ' ---- ' + md2.name;
+// 引入js
+// require('./js/jquery.min.js')  引入大的库文件不支持
+require('./js/svgLoader.js')
+require('./js/index.js')

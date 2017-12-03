@@ -1,9 +1,3 @@
-/**************************
-*
-*	GENERAL
-*
-**************************/
-
 .camera_wrap a,
 .camera_wrap img,
 .camera_wrap ol,
@@ -124,13 +118,6 @@
     right: 0;
     top: 0;
     z-index: 2;
-}
-
-.camera_target_content .camera_link {
-    background: url(../images/blank.gif);
-    display: block;
-    height: 100%;
-    text-decoration: none;
 }
 
 .camera_loader {
@@ -447,62 +434,6 @@
     margin: -1px 0 25px;
     position: relative;
 }
-
-
-/**************************
-*
-*	COLORS & SKINS
-*
-**************************/
-
-.pattern_1 .camera_overlayer {
-    background: url(../images/patterns/overlay1.png) repeat;
-}
-
-.pattern_2 .camera_overlayer {
-    background: url(../images/patterns/overlay2.png) repeat;
-}
-
-.pattern_3 .camera_overlayer {
-    background: url(../images/patterns/overlay3.png) repeat;
-}
-
-.pattern_4 .camera_overlayer {
-    background: url(../images/patterns/overlay4.png) repeat;
-}
-
-.pattern_5 .camera_overlayer {
-    background: url(../images/patterns/overlay5.png) repeat;
-}
-
-.pattern_6 .camera_overlayer {
-    background: url(../images/patterns/overlay6.png) repeat;
-}
-
-.pattern_7 .camera_overlayer {
-    background: url(../images/patterns/overlay7.png) repeat;
-}
-
-.pattern_8 .camera_overlayer {
-    background: url(../images/patterns/overlay8.png) repeat;
-}
-
-.pattern_9 .camera_overlayer {
-    background: url(../images/patterns/overlay9.png) repeat;
-}
-
-.pattern_10 .camera_overlayer {
-    background: url(../images/patterns/overlay10.png) repeat;
-}
-
-
-/* .camera_caption {
-    color: #fff;
-}
-
-.camera_caption>div {
-    background: rgba(0, 0, 0, 0.8);
-} */
 
 .camera_wrap .camera_pag .camera_pag_ul li {
     background: #b7b7b7;

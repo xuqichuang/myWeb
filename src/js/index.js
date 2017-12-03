@@ -51,7 +51,7 @@ $("#gesturepwd").on("hasPasswd", function(e, passwd) {
                 }, 2000);
                 $('.layui-layer').fadeOut();
                 setTimeout(function() {
-                    window.location.href = './src/home.html'
+                    window.location.href = './home.html'
                 }, 2000)
             });
         }, 500);
